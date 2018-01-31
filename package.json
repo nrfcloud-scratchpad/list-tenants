@@ -31,14 +31,13 @@
   "devDependencies": {
     "@commitlint/cli": "^6.0.2",
     "@commitlint/config-angular": "^6.0.2",
+    "jest": "^22.1.4",
     "husky": "^0.14.3",
     "semantic-release": "^12.4.1",
     "standard": "^10.0.3",
     "travis-deploy-once": "^4.3.3"
   },
-  "dependencies": {
-    "jest": "^22.1.4"
-  },
+  "dependencies": {},
   "files": [
     "index.js",
     "api",
