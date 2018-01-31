@@ -1,0 +1,38 @@
+{
+  "$context": "https://github.com/NordicSemiconductor/nrfcloud-freyr#irisapiresource",
+  "$contextVersion": 1,
+  "operations": {
+    "listTenants": {
+      "summary": "Fetch user's tenant",
+      "description": "Returns the tenants for a user (and creating them if they do not exist)",
+      "parameters": [
+        {
+          "name": "create",
+          "description": "Set this parameter to `true` to create a new tenant if no tenant exists for the authenticated user",
+          "in": "query",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "successResponses": {
+        "200": {
+          "schema": "TenantsList",
+          "description": "The tenants for the authenticated user"
+        },
+        "201": {
+          "schema": "TenantsList",
+          "description": "A list with the the tenant which was just created."
+        }
+      },
+      "problemResponses": [
+        400,
+        404,
+        500
+      ],
+      "lambda": {
+        "handler": "index.handler"
+      }
+    }
+  }
+}
