@@ -4,6 +4,7 @@
   "description": "Returns the tenants for a user (and creating them if they do not exist)",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "lint": "standard",
     "precommit": "npm run lint",
     "commitmsg": "commitlint -e",
