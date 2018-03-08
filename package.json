@@ -34,7 +34,7 @@
     "@commitlint/config-angular": "^6.0.2",
     "jest": "^22.1.4",
     "husky": "^0.14.3",
-    "semantic-release": "^12.4.1",
+    "semantic-release": "^15.0.0",
     "standard": "^11.0.0",
     "travis-deploy-once": "^4.3.3"
   },
